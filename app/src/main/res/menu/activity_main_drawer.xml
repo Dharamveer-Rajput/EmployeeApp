@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_feature"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/home_frag"
+            android:icon="@drawable/homecolornavigation"
+            android:title="Home Fragment" />
+        <item
+            android:id="@+id/task_frag"
+            android:icon="@drawable/taskcolornavigation"
+            android:title="Task Fragment" />
+        <item
+            android:id="@+id/account_frag"
+            android:icon="@drawable/usercolornavigation"
+            android:title="Account Fragment"
+            />
+
+    </group>
+
+
+    <group
+        android:id="@+id/group_settings"
+
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/other_frag"
+            android:icon="@drawable/settings"
+            android:title="Settings"
+            />
+
+
+    </group>
+
+
+</menu>

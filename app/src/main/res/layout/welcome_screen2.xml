@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/orange"
+    >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="@dimen/image_size200"
+        android:layout_height="@dimen/image_size70"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/image_size20"
+        android:background="@drawable/logo" />
+
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView2"
+        android:text="Dharamveer"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        />
+    <TextView
+        android:id="@+id/tvDes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:text="Android"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_marginBottom="@dimen/image_size50"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/image_size10"
+            android:text="Welcome to Smart IT Ventures"/>
+
+        <Button
+            android:id="@+id/btnLetsGo"
+            android:textSize="@dimen/image_size10"
+            android:textColor="@color/white"
+            android:text="let's go"
+            android:layout_marginBottom="@dimen/image_size50"
+            android:layout_gravity="center"
+            android:background="@drawable/button_dropshadow"
+            android:layout_width="@dimen/image_size150"
+            android:layout_height="@dimen/image_size30" />
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

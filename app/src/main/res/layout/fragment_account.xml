@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/upperPortion"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_size180"
+        android:background="@drawable/profilebg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_margin="@dimen/image_size10"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+
+            <com.smartitventures.employeeapp.CircleImageView.CircleImageView
+                android:id="@+id/imgProfilePictureAccount"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                app:civ_border_width="1dp"
+                 />
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/image_size15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvEmpName"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/image_size15"
+                    android:text="Dharamveer"/>
+
+                <TextView
+                    android:id="@+id/tvDesignation"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/image_size10"
+                    android:text="Android Developer"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/image_size20"
+        android:layout_below="@+id/upperPortion"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:background="@color/profilescreenTextbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:layout_width="@dimen/image_size10"
+                android:layout_height="@dimen/image_size10"
+                android:background="@drawable/male"/>
+
+            <TextView
+                android:id="@+id/tvEmpNameBelow"
+                android:textSize="@dimen/image_size10"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:textColor="@color/black"
+                android:text="Dharamveer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+              />
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="45dp"
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:background="@color/profilescreenTextbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:layout_width="@dimen/image_size10"
+                android:layout_height="@dimen/image_size10"
+                android:background="@drawable/mail"/>
+
+            <TextView
+                android:id="@+id/tvemail"
+                android:textSize="@dimen/image_size10"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:textColor="@color/black"
+                android:text="dharamveer.smartitventures@gmail.com"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="45dp"
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:background="@color/profilescreenTextbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:layout_width="@dimen/image_size10"
+                android:layout_height="@dimen/image_size10"
+                android:background="@drawable/key"/>
+
+            <TextView
+                android:id="@+id/tvAccessCode"
+                android:textSize="@dimen/image_size10"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:textColor="@color/black"
+                android:text="*************"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="45dp"
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:background="@color/profilescreenTextbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:layout_width="@dimen/image_size10"
+                android:layout_height="@dimen/image_size10"
+                android:background="@drawable/mobile"/>
+
+            <TextView
+                android:id="@+id/tvMobile"
+                android:textSize="@dimen/image_size10"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:textColor="@color/black"
+                android:text="9779269052"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_marginLeft="45dp"
+            android:background="@color/dark_grey"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"/>
+
+        <LinearLayout
+            android:background="@color/profilescreenTextbg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:layout_width="@dimen/image_size10"
+                android:layout_height="@dimen/image_size10"
+                android:background="@drawable/address"/>
+
+            <TextView
+                android:id="@+id/tvAddress"
+                android:textSize="@dimen/image_size10"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/image_size5"
+                android:textColor="@color/black"
+                android:text="Ropar, Punjab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

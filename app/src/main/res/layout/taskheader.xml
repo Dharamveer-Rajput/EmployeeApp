@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_above="@+id/app_bar"
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:background="@color/fragmentbg"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:id="@id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/btnTodayTask"
+            android:textColor="@color/black"
+            android:text="Today Task"
+            android:layout_width="140dp"
+            android:layout_marginBottom="@dimen/image_size5"
+            android:layout_marginLeft="@dimen/image_size5"
+            android:layout_marginTop="@dimen/image_size5"
+            android:layout_height="@dimen/image_size30"
+            android:background="@drawable/task_btn_bg_with_border_right"/>
+
+
+        <Button
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:id="@+id/btnTaskHistory"
+            android:text="Task History"
+            android:textColor="@color/black"
+            android:layout_marginBottom="@dimen/image_size5"
+            android:layout_marginTop="@dimen/image_size5"
+            android:layout_marginRight="@dimen/image_size5"
+            android:background="@drawable/his_btn_right_side_bg"
+            android:layout_width="140dp"
+            android:layout_height="@dimen/image_size30" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/header"
+        android:background="@color/light_grey">
+    </View>
+
+</RelativeLayout>

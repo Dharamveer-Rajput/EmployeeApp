@@ -1,0 +1,296 @@
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:background="@color/fragmentbg">
+
+
+        <android.support.v7.widget.CardView
+            app:cardBackgroundColor="@color/white"
+            android:layout_width="match_parent"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/textViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/image_size5">
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/image_size20"
+                    android:gravity="center"
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    />
+                <TextView
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/image_size10"
+                    android:gravity="center"
+                    android:id="@+id/tv_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Description"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:padding="@dimen/image_size5">
+
+                    <Button
+                        android:textSize="@dimen/image_size5"
+                        android:id="@+id/btnInProgress"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/image_size20"
+                        android:text="In Progress"
+                        android:background="@drawable/btnstatusred" />
+
+                    <!-- <Button
+                         android:textSize="@dimen/image_size5"
+                         android:id="@+id/btnPending"
+                         android:layout_margin="5dp"
+                         android:textColor="@color/white"
+                         android:layout_width="wrap_content"
+                         android:layout_height="@dimen/image_size20"
+                         android:text="Pending"
+                         android:background="@drawable/btnstatusred" />-->
+
+                    <Button
+                        android:textSize="@dimen/image_size5"
+                        android:id="@+id/btnCompleted"
+                        android:layout_margin="5dp"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/image_size20"
+                        android:text="Completed"
+                        android:background="@drawable/btnstatusred"
+                        />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linLayTop"
+                    android:clickable="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/image_size30"
+                        android:layout_height="@dimen/image_size30"
+                        android:background="@drawable/personprofileimage"
+                        />
+
+                    <EditText
+                        android:imeOptions="actionDone"
+                        android:id="@+id/edComment"
+                        android:ems="10"
+                        android:hint="@string/message_edit_text_hint"
+                        android:maxLength="2000"
+                        android:layout_weight="1"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="10dp"
+                        android:inputType="textMultiLine"
+                        android:scrollbars="vertical"
+                        android:background="@drawable/edit_text_states"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/image_size30"
+                        android:maxLines="4"
+                        android:scrollHorizontally="false"/>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/relaiveBtnAboveLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_margin="@dimen/image_size5"
+                        android:text="cancel"
+                        android:background="@drawable/buttonroundwhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/image_size40"
+                        android:layout_marginRight="@dimen/image_size5"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:id="@+id/btnComment1"
+                        android:layout_margin="@dimen/image_size5"
+                        android:textColor="@color/white"
+                        android:text="comment"
+                        android:background="@drawable/buttonround"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/image_size40"
+                        android:layout_toEndOf="@+id/btnCancel" />
+
+
+                </RelativeLayout>
+
+
+                <!--<TextView-->
+                <!--android:layout_marginTop="3dp"-->
+                <!--android:id="@+id/tvCommentDisplay"-->
+                <!--android:text="This is the new message. And I want to know the details of the message"-->
+                <!--android:textColor="@color/black"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+
+                <LinearLayout
+                    android:id="@+id/runTimeLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/image_size5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tvReply"
+                        android:textSize="@dimen/image_size10"
+                        android:layout_gravity="center"
+                        android:text="Reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/image_size5"
+                        android:background="@drawable/reply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textSize="@dimen/image_size15"
+                        android:textColor="@color/green"
+                        android:id="@+id/tvAnswer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="server reply"
+                        android:layout_margin="@dimen/image_size5"/>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:visibility="visible"
+                    android:id="@+id/replyCommentLayout"
+                    android:layout_marginLeft="@dimen/image_size25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_gravity="center"
+                        android:layout_width="@dimen/image_size30"
+                        android:layout_height="@dimen/image_size30"
+                        android:background="@drawable/personprofileimage"/>
+
+                    <EditText
+                        android:hint="@string/message_edit_text_hint"
+                        android:layout_weight="1"
+                        android:id="@+id/edCommentReply"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"                            android:inputType="textMultiLine"
+                        android:scrollbars="vertical"
+                        android:background="@drawable/edbackgroundoff"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="0dp"
+                        android:maxLines="4"
+                        android:maxLength ="2000"
+                        android:scrollHorizontally="false"
+                        android:layout_height="@dimen/image_size30"/>
+
+
+                </LinearLayout>
+
+
+                <RelativeLayout
+                    android:visibility="gone"
+
+                    android:id="@+id/replyBtnLayout"
+                    android:layout_marginLeft="@dimen/image_size25"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btnCancelReply"
+                        android:layout_margin="@dimen/image_size5"
+                        android:text="cancel"
+                        android:background="@drawable/buttonroundwhite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/image_size40"
+                        android:layout_marginRight="@dimen/image_size5"
+                        android:layout_centerHorizontal="true" />
+
+                    <Button
+                        android:id="@+id/btnCommentReply"
+                        android:layout_margin="@dimen/image_size5"
+                        android:textColor="@color/white"
+                        android:text="Reply"
+                        android:background="@drawable/buttonround"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/image_size40"
+                        android:layout_toEndOf="@+id/btnCancelReply" />
+
+
+                </RelativeLayout>
+
+                <!--<TextView-->
+                <!--android:layout_marginLeft="@dimen/image_size25"-->
+                <!--android:id="@+id/tvReplyChild"-->
+                <!--android:text="This is the new message."-->
+                <!--android:textColor="@color/black"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+                <LinearLayout
+                    android:id="@+id/runTimeLinearLayoutLow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+</ScrollView>

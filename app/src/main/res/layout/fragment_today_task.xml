@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:id="@+id/mainLayout"
+    android:background="@color/fragmentbg">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/today_task_rv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+
+        />
+
+   <!-- <ProgressBar
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/progress"
+        android:layout_gravity="center"
+        android:id="@+id/progressBarBill"
+        android:layout_width="60dp"
+        android:layout_height="60dp" />-->
+
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/notaskImage"
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/image_size200"
+        android:layout_height="@dimen/image_size150"
+        android:background="@drawable/notaskicon" />
+
+
+    <LinearLayout
+        android:id="@+id/floatingAddTask_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingAddTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/plus"
+            android:backgroundTint="@color/blueHome"
+            app:borderWidth="0dp"
+            app:elevation="6dp"
+            android:layout_margin="@dimen/image_size10"
+
+            app:fabSize="normal"/>
+
+    </LinearLayout>
+</RelativeLayout>

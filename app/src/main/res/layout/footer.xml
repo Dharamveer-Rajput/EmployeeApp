@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:background="@color/blueHome">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/homeClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewHome"
+                android:layout_width="@dimen/image_size40"
+                android:layout_height="@dimen/image_size40"
+                android:background="@drawable/homeoff" />
+
+            <TextView
+                android:id="@+id/textViewHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="@dimen/image_size10"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/taskClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewTask"
+                android:layout_width="@dimen/image_size40"
+                android:layout_height="@dimen/image_size40"
+                android:background="@drawable/taskoff" />
+
+            <TextView
+                android:id="@+id/textViewTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Task"
+                android:textSize="@dimen/image_size10"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/accountClick"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageViewAccount"
+                android:layout_width="@dimen/image_size40"
+                android:layout_height="@dimen/image_size40"
+                android:background="@drawable/useroff" />
+
+            <TextView
+                android:id="@+id/textViewAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Account"
+                android:textSize="@dimen/image_size10"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">EmployeeApp</string>
+    <string name="goog_api_key">AIzaSyAzXoisREH7A9WL_irbyN0dmBoTTwQDClI</string>
+
+    <string name="access_code">Access Code</string>
+    <string name="welcomeIn">Welcome</string>
+    <string name="internetcheck">Internet not Working</string>
+
+    <string name="enter_four_digit_code">enter four-digit passcode</string>
+    <string name="message_edit_text_hint">Add a comment.........</string>
+    <string name="enter_title">Select Task</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="submit_button">SUBMIT</string>
+    <string name="today_task">Enter Today Task</string>
+    <string name="add_new_task">Enter the today Task</string>
+    <string name="deadline">Deadline</string>
+
+         
+    <string name="defaultText">Select your Task</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+</resources>
